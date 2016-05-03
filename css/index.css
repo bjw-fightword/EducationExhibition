@@ -1,0 +1,410 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+body{
+	font-family: "微软雅黑",Verdana,Geneva,Arial,Sans-serif;
+}
+header{
+	height: 50px;
+	background-color: #343434;
+	padding: 0 150px;
+}
+.clear{
+	clear: both;
+}
+/* 顶部 */
+.hd-left,.hd-middle,.hd-right{
+	width: 33.3%;
+	height: 100%;
+	position: relative;
+	float: left;
+}
+.hd-left a img{
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 5px;
+}
+.hd-middle ul {
+	margin-left: 30px;
+}
+
+.hd-middle ul li{
+	margin: 0 20px;
+	float: left;
+
+}
+.hd-middle ul li a{
+	display: block;
+	color: #39393a;
+	text-decoration: none;
+	background-color: #efda98;
+	padding: 3px 10px;
+	border-radius: 3px;
+	font-size: 14px;
+	margin-top: 13px;
+}
+.hd-right ul{
+	float: right;
+}
+.hd-right ul li{
+	float: left;
+}
+.hd-right ul li a{
+	display: block;
+	position: relative;
+	margin: 15px 15px;
+	color: #fff;
+	font-size: 14px;
+	text-decoration: none;
+}
+.hd-right ul li a img{
+	position: absolute;
+	top: 2px;
+	left: -16px;
+}
+/* 顶部完 */
+
+
+/* banner */
+.banner{
+	width: 100%;
+	min-height: 600px;
+	background-image: url(../images/banner.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	position: relative;
+}
+.banner .banner-text{
+	left: 10%;
+	top: 20%;
+	position: absolute;
+	padding: 15px 30px;
+	min-width: 30%;
+	height: auto;
+	text-align: center;
+	background: rgba(148,136,86,.3);
+}
+.banner .banner-text ul li:nth-of-type(1){
+	font-size: 50px;
+	color: #fff;
+	letter-spacing: 3px;
+}
+.banner .banner-text ul li:nth-of-type(2){
+	color: #fff;
+	font-size: 21px;
+	letter-spacing: 0px;
+}
+.banner .banner-text ul li:nth-of-type(3){
+	color: #fff;
+	font-size: 20px;
+	margin-top: 15px;
+	letter-spacing: 2px;
+}
+.banner .banner-text ul li:nth-of-type(4){
+	font-size: 14px;
+	color: #fff;
+	letter-spacing: 1px;
+}
+
+.banner-list{
+	text-align: center;
+	padding-top: 28%;
+}
+
+.banner-list ul li{
+	display: inline-block;
+}
+.banner-list ul li a{
+	display: block;
+	color: #39393a;
+	background: #efda98;
+	text-decoration: none;
+	padding: 10px 40px;
+	margin: 0 20px;
+	border-radius: 5px;
+}
+/* banner完 */
+
+/* 内容 */
+.activity{
+	width: auto;
+    margin: auto;
+    max-width: 1024px;
+    padding: 32px 32px;
+}
+.background h2,.scale h2,.forun-content h2,.exhibiition-school h2{
+	text-align: center;
+	color:#1c90ff ;
+	font-size: 30px;
+	font-weight: normal;
+}
+.background span.under-line{
+	width: 120px;
+	height: 2px;
+	background: #bfbfbf;
+	display: block;
+	margin: 0 auto;
+	margin-top: 5px;
+}
+.exhibiition-school span.under-line{
+	width: 210px;
+	height: 2px;
+	background: #bfbfbf;
+	display: block;
+	margin: 0 auto;
+	margin-top: 5px;
+}
+.scale span{
+	width: 180px;
+	height: 2px;
+	background: #bfbfbf;
+	display: block;
+	margin: 0 auto;
+	margin-top: 5px;
+}
+.background p,.scale p{
+	font-size: 15px;
+	color: #39393a;
+	margin: 20px 0;
+	line-height: 25px;
+}
+.forum{
+	background: #f0f0f0;
+	padding-top: 0;
+}
+.forun-content span{
+	width: 120px;
+	height: 2px;
+	background: #bfbfbf;
+	display: block;
+	margin: 0 auto;
+	margin-top: 5px;
+}
+
+
+.forum-one{
+	height: 406px;
+	width: 19%;
+	background: #fff;
+	text-align: center;
+	padding: 15px 0;
+	float: left;
+	margin-right: 1%;
+}
+.forum-one h5{
+	text-align: center;
+	color: #a2a2a2;
+	font-size: 16px;
+}
+.forum-one p{
+	font-size: 16px;
+	color: #000;
+	line-height: 35px;
+}
+.forum-one img{
+	width: 100%;
+}
+.forum-one ul{
+	text-align: left;
+	padding-left: 10px;
+}
+.forum-one ul li{
+	line-height: 23px;
+	font-size: 14px;
+}
+.forum-one ul li:nth-child(odd){
+	color: #000;
+}
+.forum-one ul li:nth-child(even){
+	color: #a2a2a2;
+}
+.exhibiition-left{
+	width: 30%;
+}
+.exhibiition-left img{
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+.exhibiition-right{
+	width: 68%;
+	padding-left: 2%;
+}
+.exhibiition-left,.exhibiition-right{
+	float: left;
+	margin-top: 20px;
+} 
+.exhibiition-right p{
+	font-size: 12px;
+	color: #a2a2a2;
+	margin: 0;
+	margin-bottom: 10px;
+	line-height: 20px;
+}
+.exhibiition-right h5{
+	font-size: 14px;
+	margin-bottom: 10px;
+	color: #a2a2a2;
+}
+.exhibiition-right ul li{
+	font-size: 12px;
+	color:#0f78db;
+	
+}
+.exhibiition .exhibiition-right ul li span{
+	font-size: 12px;
+	color:#a2a2a2;
+	line-height: 18px;
+}
+
+
+
+
+/* 演讲嘉宾 */
+.guests-box{
+	margin: 50px 0;
+}
+.guests{
+	min-height: 345px;
+	width: 23%;
+	margin-right: 2%;
+	float: left;
+	position: relative;
+	background: #fff;
+}
+.guests-top{
+	width: 100%;
+	height: 100px;
+}
+.guests-people{
+	float: left;
+	width: 40%;
+}
+.guests-people .img1{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background-image: url(../images/guests.png);
+	background-size: 100%;
+}
+.guests-people .img2{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background-image: url(../images/guests2.jpg);
+	background-size: 100%;
+}
+.guests-people .img3{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background-image: url(../images/guests3.jpg);
+	background-size: 100%;
+}
+.guests-people .img4{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background-image: url(../images/guests4.jpg);
+	background-size: 100%;
+}
+.guests-people .img5{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background-image: url(../images/guests5.jpg);
+	background-size: 100%;
+}
+.guests-people .img6{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background-image: url(../images/guests6.jpg);
+	background-size: 100%;
+}
+.guests-people .img7{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background-image: url(../images/guests7.jpg);
+	background-size: 100%;
+}
+.guests-information{
+	width: 55%;
+	float: right;
+	margin-left: 5%;
+}
+.guests-information p{
+	color: #000 !important;
+}
+.guests-information p:nth-of-type(1){
+	font-size: 16px;
+	line-height: 30px;
+}
+.guests-information p:nth-of-type(2),.guests-information p:nth-of-type(3){
+	font-size: 13px;
+	line-height: 20px;
+}
+.guests p a{
+	color: #000;
+	text-decoration: none;
+}
+.guests p {
+	font-size: 13px;
+	line-height: 25px;
+	color: #a2a2a2;
+}
+.guests p.information:nth-of-type(2){
+	margin-top: 20px;
+}
+.more-speakers{
+	width: 158px;
+	height:53px;
+	position: absolute;
+	display: block;
+	margin: auto;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+}
+.more-speakers p{
+	font-size: 20px;
+}
+.schools{
+	margin-top: 50px;
+	width: 100%;
+	height: 338px;
+	background-image: url(../images/schools.jpg);
+	background-size: 100%;
+}
+footer{
+	width: 100%;
+	height: 100px;
+	background: #2b2b2b;
+	position: relative;
+}
+footer p{
+	width: 550px;
+	height: 20px;
+
+	color: #cacaca;
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
