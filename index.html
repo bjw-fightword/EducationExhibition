@@ -2,8 +2,11 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 	<title>中国全球教育展</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/index.css">
+
 </head>
 <body>
 	<header>
@@ -26,6 +29,11 @@
 				<li><a href="">联系我们</a></li>
 				<div class="clear"></div>
 			</ul>
+		</div>
+		<div class="EN-CH">
+			<span>中文</span>
+			<span>|</span>
+			<span>EN</span>
 		</div>
 	</header>
 	<div class="banner">
@@ -255,9 +263,6 @@
 
 
  
-					<div class="clear"></div>
-				</div>
-				<div class="guests-box">
 					<div class="guests">
 						<div class="guests-top">
 							<div class="guests-people">
@@ -326,7 +331,143 @@
 		</section>
 	</div>
 	<footer>
-		<p>北京恒知动奇科技有限公司&nbsp;&nbsp; &nbsp;&nbsp;      联系邮箱：&nbsp; service@chinaeduexpo.com</p>
+		<p>北京恒知动奇科技有限公司&nbsp;&nbsp;联系邮箱:&nbsp; service@chinaeduexpo.com</p>
 	</footer>
+	<!--移动固定定位-->
+	<div class="bottom-fixed">
+		<div class="bt-fix-left">
+			<img src="./images/nav.png" alt="">
+		</div>
+		<div class="bt-fixed-right">
+			<div class="contact">
+				<p>联系我们</p>
+			</div>
+			<div class="sign-up">
+				<p>报名参会</p>
+				<div class="fix-content">
+					<ul>
+						<li><a href="">申请参会</a></li>
+						<li><a href="">申请参展</a></li>
+						<li><a href="">申请演讲</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="mymodal">
+	    <div class="modal-dialog">
+	        <div class="modal-content">
+				<div class="modal-body">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+					<div class="popBG">
+						<h1>联系我们</h1>
+						<p class="FloarRight">
+							<span>*</span>为必填项
+						</p>
+						<br>
+						<p class="phone">邮箱：service@globaleducation.com&nbsp;&nbsp;&nbsp;&nbsp;电话：400.667.4632</p>
+						<form id="join_form">
+								<div class="row popBGcontent">
+									<div class="col-lg-6 col-md-6 col-xs-12">
+										<dl>
+											<dd>
+												<p>
+													姓名<span>*</span>
+												</p>
+												<input class="form-control" name="username" id="username">
+											</dd>
+										</dl>
+									</div>
+									<div class="col-lg-6 col-md-6 col-xs-12">
+										<dl>
+											<dd>
+												<p>
+													邮箱<span>*</span>
+												</p>
+												<input class="form-control" id="email" name="email">
+											</dd>
+										</dl>
+									</div>
+									
+									
+									<div class="col-xs-12">
+										<dl>
+											<dd>
+												<p>
+													留言<span>*</span>
+												</p>
+
+												<textarea name="" id="" cols="71" rows="5" class="message"></textarea>
+											</dd>
+										</dl>
+									</div>
+									<div class="col-md-2 hidden-xs"></div>
+									<div class="col-xs-12 ">
+										<input type="button" value="提交" class="btn btn-info btn-lg btn-block">
+									</div>
+								</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="mymodal1">
+	    <div class="modal-dialog1">
+            <div class="modal-content success">
+				<div class="modal-body">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+					<div class="popBG">
+						<img src="./images/duigou.png" alt="">
+						<h2>
+							您的留言已经成功提交！
+						</h2>
+						<p>我们会在两个工作日内联系您。</p>
+						<div class="clear"></div>
+						<br>
+						<form id="join_form1">
+							<div class="row popBGcontent">
+								<div class="col-xs-12 ">
+									<input type="button" value="关闭" onclick="Join.saveJoinInfo($(this))" class="btn btn-info btn-lg btn-block closeBtn">
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="mymodal2">
+	    <div class="modal-dialog1">
+            <div class="modal-content following">
+				<div class="modal-body">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+					<div class="popBG">
+						<h2>
+							关注全球教育展
+						</h2>
+						<span class="col-xs-6">官网：yoopay.cn</span>
+						<span class="col-xs-6">微信：Yoopay</span>
+						<span class="col-xs-6">电话：400.0800.620</span>
+						<span class="col-xs-6"> 邮箱: service@yoopay.cn</span>
+						<span class="under-line"></span>
+						<img src="./images/erweima.png" class="erweima">
+						<p>长按二维码，然后选择“识别图中二维码”来关注全球教育展微信</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--微信关注-->
 </body>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.transition.js"></script>
+<script src="js/bootstrap.modal.js"></script>
+<script src="js/index.js"></script>
 </html>

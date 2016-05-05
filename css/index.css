@@ -5,11 +5,15 @@
 }
 body{
 	font-family: "微软雅黑",Verdana,Geneva,Arial,Sans-serif;
+	min-width: 1024px;
 }
 header{
 	height: 50px;
 	background-color: #343434;
 	padding: 0 150px;
+}
+p{
+	margin: 0;
 }
 .clear{
 	clear: both;
@@ -186,7 +190,6 @@ header{
 
 
 .forum-one{
-	height: 406px;
 	width: 19%;
 	background: #fff;
 	text-align: center;
@@ -276,7 +279,7 @@ header{
 	margin: 50px 0;
 }
 .guests{
-	min-height: 345px;
+	min-height: 420px;
 	width: 23%;
 	margin-right: 2%;
 	float: left;
@@ -393,18 +396,365 @@ footer{
 	width: 100%;
 	height: 100px;
 	background: #2b2b2b;
-	position: relative;
+	text-align: center;
 }
 footer p{
-	width: 550px;
-	height: 20px;
-
 	color: #cacaca;
-	display: block;
-	position: absolute;
+	line-height: 100px;
+}
+/* 移动补充样式 */
+.EN-CH{
+	color: #fff;
+	font-size: 12px;
+	float: right;
+	line-height: 50px;
+	margin-right: 15px;
+}
+/* 移动版 */
+@media(max-width: 768px){
+	body{
+		min-width: 0;
+		
+	}
+	.hd-middle,.hd-right{
+		display: none;
+	}
+	.hd-left a img{
+		left: 40px;
+		height: 20px;
+		top: 15px;
+	}
+	header{
+		padding: 0;
+	}
+	.hd-left{
+		background-image: url(../images/nav.png);
+		background-size: 20px;
+		background-repeat: no-repeat;
+		background-position:15px 15px;
+	}
+	.banner-list ul li a{
+		padding: 5px 15px;
+    	margin: 0 10px;
+    	border-radius: 3px;
+	}
+	.banner-list{
+		padding-top: 60%;
+	}
+	.banner{
+		background-image: url(../images/yidong-banner.jpg);
+		min-height: 300px;
+	}
+	.banner .banner-text{
+		left: 0;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    margin: auto;
+	    padding: 8px 15px;
+	    height: 120px;
+	    width: 350px;
+	    text-align: center;
+	    background: rgba(148,136,86,.3)
+	}
+	.banner .banner-text ul li:nth-of-type(1){
+		font-size: 25px;
+    	letter-spacing: 3px;
+	}
+	.banner .banner-text ul li:nth-of-type(2){
+		font-size: 12px;
+	}
+	.banner .banner-text ul li:nth-of-type(3){
+		font-size: 12px;
+	}
+	.banner .banner-text ul li:nth-of-type(4){
+		font-size: 10px;
+		letter-spacing: -1px;
+	}
+	.forum-one {
+	    width: 100%;
+	    padding: 15px 0;
+	    margin-right: 0%;
+	}
+	.activity {
+	    width: auto;
+	    margin: auto;
+	    max-width: 1024px;
+	    padding: 15px 50px;
+	}
+	.exhibiition-left {
+    	width: 100%;
+	}
+	.exhibiition-right{
+		width: 100%;
+		padding-left: 0;
+	}
+	.guests-people .img1,.guests-people .img2,.guests-people .img3,.guests-people .img4,.guests-people .img5,.guests-people .img6,.guests-people .img7{
+		margin: 0 auto;
+	}
+	.guests{
+		width: 31%;
+		margin-right: 2%;
+		min-height: 200px;
+		text-align: center;
+		overflow: hidden;
+	}
+	.guests:nth-of-type(4),.guests:nth-of-type(5),.guests:nth-of-type(6),
+	.guests:nth-of-type(7),.guests:nth-of-type(8){
+		margin-top: 20px;
+	}
+	.guests:nth-of-type(4) .guests-information p:nth-of-type(1),.guests:nth-of-type(7) .guests-information p:nth-of-type(1){
+		font-size: 14px;
+		letter-spacing: -1px;
+	}
+	.guests:nth-of-type(3){
+		margin-right: 0%;
+	}
+	.guests p.information:nth-of-type(2){
+		display: none;
+	}
+	.guests-top+p{
+		display: none;
+	}
+	.guests-people{
+		width: 100%;
+	}
+	.guests-information{
+		width: 100%;
+		margin-left: 0;
+	}
+	.guests-information p:nth-of-type(1){
+		margin-top: 10px;
+	}
+	.guests-information p:nth-of-type(2), .guests-information p:nth-of-type(3){
+		font-size: 10px;
+		line-height: 15px;
+	}
+	.guests-information p:nth-of-type(2){
+		margin-top: 15px;
+	}
+	.more-speakers p{
+		font-size: 14px;
+	}
+	.more-speakers {
+	    width: 79px;
+	    height: 50px;
+	}
+	.more-speakers p:nth-of-type(2){
+		letter-spacing: -1px;
+		font-size: 10px;
+	}
+	.guests-box{
+		margin-bottom: 0;
+	}
+	footer{
+		margin-bottom: 50px;
+	}
+	footer p{
+		font-size: 12px;
+	}
+	.schools {
+	    margin-top: 50px;
+	    background-repeat: no-repeat;
+	    height: 400px;
+	    background-image: url(../images/min-schools.jpg);
+	    background-size: 100%;
+	}
+	.modal-dialog1 {
+	    width: 450px;
+	    margin: 30px auto;
+	}
+}
+@media(max-width: 320px){
+	.banner-list ul li a{
+		padding: 5px 10px;
+    	margin: 0 10px;
+    	border-radius: 3px;
+	}
+	.banner .banner-text{
+		left: 0;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    margin: auto;
+	    padding: 8px 8px;
+	    height: 255px;
+	    width: 300px;
+	    text-align: center;
+	   background: rgba(0,0,0,0);
+	}
+		.banner .banner-text ul{
+			 background: rgba(148,136,86,.3);
+		}
+	.banner .banner-text ul li:nth-of-type(2){
+		letter-spacing: -1px;
+	}
+	.banner .banner-text ul li:nth-of-type(4){
+		letter-spacing: -2px;
+	}
+}
+/* 底部固定定位 */
+.btn{
+	padding: 0;
+}
+.btn:hover{
+	color: #fff;
+}
+.bottom-fixed{
+	width: 100%;
+	height: 50px;
+	position: fixed;
 	left: 0;
-	top: 0;
+	bottom: 0;
+	background: #4f4f4f;
+	display: none;
+}
+.bt-fix-left{
+	width: 50px;
+	height: 50px;
+	float: left;
+	position: relative;
+}
+.bt-fix-left img{
+	width: 30px;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+}
+.bt-fixed-right{
+	height: 50px;
+	background: #5aaf32;
+	position: absolute;
+	left: 50px;
 	right: 0;
 	bottom: 0;
-	margin: auto;
+}
+.contact,.sign-up{
+	width: 50%;
+	height: 50px;
+	float: left;
+	text-align: center;
+	line-height: 50px;
+	color: #fff;
+	position: relative;
+	cursor: pointer;
+}
+.sign-up{
+	background:#1779c1;
+}
+.fix-content{
+	width: 100%;
+	background: #49484d;
+	position: absolute;
+	right: 0;
+	bottom: 50px;
+	display: none;
+}
+.fix-content ul li a{
+	color: #fff;
+	text-decoration: none;
+	line-height: 50px;
+	margin-left: -20%;
+}
+/* 联系我们弹出 */
+.popBG h1 {
+    font-size: 22px;
+    text-align: center;
+}
+.popBG h1+.FloarRight {
+    font-size: 12px;
+    display: block;
+    float: right;
+}
+#join_form{
+	display: block;
+	padding: 20px;
+	background: #ebe9ea;
+}
+
+.popBG .phone{
+	text-align: center;
+	margin-bottom: 10px;
+}
+.message{
+	width: 100%;
+	height: 100px;
+}
+input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="button"].btn-block {
+    width: 30%;
+   	margin: 0 auto;
+    line-height: 40px;
+}
+.popBG img{
+	position: absolute;
+	left: 50px;
+	top: 40px;
+}
+.popBG h2{
+	position: absolute;
+	left: 80px;
+	top: 20px;
+	font-size: 20px;
+}
+.popBG h2+p{
+	position: absolute;
+	left: 80px;
+	top: 70px;
+}
+#mymodal1 .success{
+	min-height: 200px;
+}
+.closeBtn{
+	position: absolute;
+	right: 30px;
+	bottom: -100px;
+}
+.following{
+	min-height: 200px;
+}
+.following .popBG{
+	min-height: 300px;
+	text-align: center;
+}
+.following .popBG span{
+	text-align: left;
+	display: block;
+}
+.following .popBG img.erweima{
+	text-align: center;
+	position: static;
+	margin-top: 40px;
+}
+.following .popBG img.erweima+p{
+	line-height: 30px;
+	font-size: 16px;
+	margin-top: 10px;
+}
+.following h2{
+	text-align: center;
+	clear: both;
+	position: static;
+}
+.following .under-line{
+	background: rgba(0,0,0,0.5);
+	height: 2px;
+	width: 90%;
+	display: block;
+	position: absolute;
+	top: 130px;
+}
+@media(max-width: 768px){
+	.bottom-fixed{
+		display: block;
+	}
+}
+@media (min-width: 768px){
+	.modal-dialog1 {
+	    width: 470px;
+	    margin: 30px auto;
+	}
+	.modal-dialog2 {
+	    width: 300px;
+	    margin: 30px auto;
+	}
 }
