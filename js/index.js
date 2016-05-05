@@ -16,6 +16,9 @@ $(function(){
       	$("#mymodal1").modal("toggle");
       	$("#mymodal").hide();
     });
+    $('.close').click(function(){
+          $("#mymodal").hide();
+    })
    $(".bt-fix-left").click(function(event){
    		event.stopPropagation();
    		$("#mymodal2").modal("toggle");
