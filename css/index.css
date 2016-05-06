@@ -18,12 +18,55 @@ p{
 .clear{
 	clear: both;
 }
+/*英文补充*/
+.background span.EN-under-line{
+	width: 175px;
+    height: 2px;
+    background: #bfbfbf;
+    display: block;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+.scale span.en-underline {
+    width: 260px;
+    height: 2px;
+    background: #bfbfbf;
+    display: block;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+.forum-one p.Forum-one{
+	font-size: 14px;
+	line-height: 25px;
+	min-height: 75px;
+}
+.enforum{
+	min-height: 527px;
+}
+.forum-one{
+	min-height: 418px;
+}
+.exhibiition .en-exhibiition-right{
+	width: 60%;
+}
+.exhibiition .en-exhibiition-left{
+	width: 40%;
+}
+/*英文补充完*/
 /* 顶部 */
 .hd-left,.hd-middle,.hd-right{
-	width: 33.3%;
 	height: 100%;
 	position: relative;
 	float: left;
+}
+.hd-left{
+	width: 30%;
+}
+.hd-middle{
+	width: 40%;
+}
+.hd-right{
+	width: 30%;
 }
 .hd-left a img{
 	display: block;
@@ -41,11 +84,14 @@ p{
 
 }
 .hd-middle ul li a{
+	width: 100px;
+	height: 30px;
 	display: block;
 	color: #39393a;
 	text-decoration: none;
 	background-color: #efda98;
-	padding: 3px 10px;
+	line-height: 30px;
+	text-align: center;
 	border-radius: 3px;
 	font-size: 14px;
 	margin-top: 13px;
@@ -123,10 +169,12 @@ p{
 }
 .banner-list ul li a{
 	display: block;
+	width: 100px;
+	height: 30px;
 	color: #39393a;
 	background: #efda98;
 	text-decoration: none;
-	padding: 10px 40px;
+	line-height: 30px;
 	margin: 0 20px;
 	border-radius: 5px;
 }
@@ -287,7 +335,7 @@ p{
 	position: relative;
 	background: #fff;
 	margin-bottom: 20px;
-	box-shadow: 
+	padding-top: 15px;
 }
 .guests-top{
 	width: 100%;
@@ -413,11 +461,22 @@ footer p{
 	line-height: 50px;
 	margin-right: 15px;
 }
+.EN-CH a{
+	color: #fff;
+	font-size: 12px;
+}
 /* 移动版 */
 @media(max-width: 768px){
 	.guests-people .img1,.guests-people .img2,.guests-people .img3,.guests-people .img4,.guests-people .img5,.guests-people .img6,.guests-people .img7{
 		width: 60px;
 		height: 60px;
+	}
+	footer{
+		height: 70px;
+	}
+	footer p{
+		color: #cacaca;
+		line-height: 70px;
 	}
 	body{
 		min-width: 0;
@@ -441,7 +500,6 @@ footer p{
 		background-position:15px 15px;
 	}
 	.banner-list ul li a{
-		padding: 5px 15px;
     	margin: 0 10px;
     	border-radius: 3px;
 	}
@@ -492,9 +550,15 @@ footer p{
 	.exhibiition-left {
     	width: 100%;
 	}
+	.exhibiition .en-exhibiition-left{
+		width: 100%;
+	}
 	.exhibiition-right{
 		width: 100%;
 		padding-left: 0;
+	}
+	.exhibiition .en-exhibiition-right{
+		width: 100%;
 	}
 	.guests-people .img1,.guests-people .img2,.guests-people .img3,.guests-people .img4,.guests-people .img5,.guests-people .img6,.guests-people .img7{
 		margin: 0 auto;
@@ -502,14 +566,10 @@ footer p{
 	.guests{
 		width: 31%;
 		margin-right: 2%;
-		min-height: 160px;
+		min-height: 220px;
 		text-align: center;
 		overflow: hidden;
 		padding-bottom: 15px;
-	}
-	.guests:nth-of-type(4),.guests:nth-of-type(5),.guests:nth-of-type(6),
-	.guests:nth-of-type(7),.guests:nth-of-type(8){
-		margin-top: 20px;
 	}
 	.guests:nth-of-type(4) .guests-information p:nth-of-type(1),.guests:nth-of-type(7) .guests-information p:nth-of-type(1){
 		font-size: 14px;
