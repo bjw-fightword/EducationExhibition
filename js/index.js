@@ -7,20 +7,27 @@ $(function(){
 			$('.fix-content').slideUp();
 		}
 	})
+    $(".hd-left-nav").click(function(){
+        if($(".hd-left-list").css('display')=='none'){
+            $(".hd-left-list").slideDown();
+        }else{
+            $(".hd-left-list").slideUp();
+        }
+    })
 	$(".contact").click(function(event){
 		event.stopPropagation();
       	$("#mymodal").slideDown();
-    });
+    })
     $(".btn").click(function(event){
     	event.stopPropagation();
       	$("#mymodal1").modal("toggle");
       	$("#mymodal").hide();
-    });
+    })
     $('.close').click(function(){
           $("#mymodal").hide();
     })
-   $(".bt-fix-left").click(function(event){
+    $(".bt-fix-left").click(function(event){
    		event.stopPropagation();
    		$("#mymodal2").modal("toggle");
-   })
+    })
 })
